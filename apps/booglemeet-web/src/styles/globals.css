@@ -17,7 +17,7 @@
 } */
 
 body {
-  @apply m-0 w-dvw h-screen
+  @apply m-0 w-screen h-screen
 }
 
 .top_mast {
@@ -38,7 +38,7 @@ body {
 
 
 .top_mast_end {
-  @apply flex mr-1 flex-1 h-full items-center justify-end
+  @apply flex mr-1 flex-1 h-full items-center justify-end mx-10
 }
 
 .clock_label {
@@ -53,10 +53,26 @@ body {
   @apply bg-gray-200
 }
 
-.outer_mast_icon > span {
-  @apply  flex flex-col text-xs opacity-0 absolute top-16 bg-gray-700 p-2 rounded-md text-slate-200 transition-opacity ease-in-out delay-100 duration-200
+
+
+.outer_mast_icon>span {
+  @apply flex flex-col text-xs opacity-0 absolute top-16 bg-gray-700 p-2 rounded-md text-slate-200 transition-opacity ease-in-out delay-100 duration-200
 }
 
-.outer_mast_icon:hover > span {
+.outer_mast_icon:hover>span {
   @apply flex flex-col text-xs opacity-100
+}
+
+.mast_profile_pic {
+  @apply w-8 min-h-8 rounded-full absolute top-5 right-[20px]
+}
+
+.profile_icon>span {
+  @apply flex flex-col right-[3px] text-xs opacity-0 absolute top-16 bg-gray-700 p-2 rounded-md text-slate-200 transition-opacity ease-in-out delay-100 duration-200
+}
+
+
+
+.profile_icon:hover>span {
+  @apply flex flex-col text-xs opacity-100 right-[3px]
 }
