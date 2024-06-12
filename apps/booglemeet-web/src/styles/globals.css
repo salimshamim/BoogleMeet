@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  @apply m-0 w-dvw h-screen
+}
+
+.top_mast {
+  @apply flex w-dvw justify-between h-[4.5rem]
+}
+
+.top_mast_start {
+  @apply flex ml-6 flex-1 h-full items-center
+}
+
+.meet_google_logo {
+  @apply flex items-center
+}
+
+.meet_google_logo>span {
+  @apply ml-1 text-slate-600 font-medium text-xl
+}
+
+
+.top_mast_end {
+  @apply flex mr-1 flex-1 h-full items-center justify-end
+}
+
+.clock_label {
+  @apply mx-3 text-slate-600 font-medium text-base
+}
+
+.mast_icon {
+  @apply p-3 cursor-pointer rounded-full
+}
+
+.mast_icon:hover {
+  @apply bg-gray-200
+}
+
+.outer_mast_icon > span {
+  @apply  flex flex-col text-xs opacity-0 absolute top-16 bg-gray-700 p-2 rounded-md text-slate-200 transition-opacity ease-in-out delay-100 duration-200
+}
+
+.outer_mast_icon:hover > span {
+  @apply flex flex-col text-xs opacity-100
+}
